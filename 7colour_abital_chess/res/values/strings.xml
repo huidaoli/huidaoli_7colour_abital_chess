@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">七彩五子棋局</string>
+    <string name="app_name">七彩五子棋局</string>
+    <string name="loading">正在加载</string>
+</resources>

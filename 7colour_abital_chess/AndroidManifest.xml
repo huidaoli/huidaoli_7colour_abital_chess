@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-  package="com.dummy.fooforandroid"
+  package="com.abital.chess"
   android:versionCode="1"
   android:versionName="1.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
@@ -8,9 +8,9 @@
     android:debuggable="true"
     android:icon="@drawable/script_logo_48"
     android:label="@string/app_name"
-    android:name=".ScriptApplication">
+    android:name="com.abital.chess.ScriptApplication">
     <activity
-      android:name=".ScriptActivity"
+      android:name="com.abital.chess.ScriptActivity"
       android:configChanges="keyboardHidden|orientation"
       android:theme="@android:style/Theme.Translucent.NoTitleBar">
       <intent-filter>
@@ -27,20 +27,20 @@
       </intent-filter>
     </activity>
     <service
-      android:name=".ScriptService" />
+      android:name="com.abital.chess.ScriptService" />
     <activity
       android:configChanges="keyboardHidden|orientation"
       android:name="com.googlecode.android_scripting.activity.FutureActivity" 
       android:theme="@android:style/Theme.Translucent"/>
     <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" 
       android:configChanges="keyboardHidden|orientation" 
-      android:name=".DialogActivity"/>
+      android:name="com.abital.chess.DialogActivity"/>
 </application>
   <uses-sdk android:minSdkVersion="4"/>
   <uses-permission
     android:name="android.permission.INTERNET" />
-  <!-- <uses-permission
-    android:name="android.permission.VIBRATE" /> -->
+  <uses-permission
+    android:name="android.permission.VIBRATE" />
   <!-- <uses-permission
    android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"/> -->
   <!-- <uses-permission
@@ -87,8 +87,8 @@
    android:name="android.permission.BROADCAST_STICKY"/> -->
   <!-- <uses-permission
    android:name="android.permission.BROADCAST_WAP_PUSH"/> -->
-  <!-- <uses-permission
-   android:name="android.permission.CALL_PHONE"/> -->
+  <uses-permission
+   android:name="android.permission.CALL_PHONE"/>
   <!-- <uses-permission
    android:name="android.permission.CALL_PRIVILEGED"/> -->
   <!-- <uses-permission
